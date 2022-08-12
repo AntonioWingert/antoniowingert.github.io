@@ -6,10 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+        body {
+            background-color: #8ab0ab;
+        }
+
+        #name {
+            font-family: 'DynaPuff', cursive;
+            text-align: center;
+        }
+
+        #descricao {
+            font-family: "DynaPuff";
+            font-size: 15px;
+        }
+
+        #residencia {
+            text-decoration: underline;
+        }
+
+        .nerd {
+            font-size: 20px;
+            font-family: "DynaPuff";
+        }
+
+        .dedicado {
+            font-size: 17px;
+        }
+
+        .estudioso {
+            font-size: 18px;
+        }
+
+        .comunicacao {
+            font-size: 19px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Antonio Bruno de Quevedo Wingert</h1>
+    <h1 id="name">Antonio Bruno de Quevedo Wingert</h1>
     <a href="#"><img src="perfil.jpg" alt="foto de perfil" width="300px"></a>
     <h2>👇Você pode acessar a seção que preferir clicando em cada um dos indices correspondentes 👇 </h2>
     <ul>
@@ -24,15 +62,17 @@
         </a>
     </ul>
     <p id="descricao">Olá, me chamo <em>Antonio Bruno</em>, tenho 23 anos, estou em busca de me tornar um desenvolvedor
-        Web, sou Brasileiro e resido em Santo Antonio do Sudoeste, no interior do Paraná.</p>
+        Web, <strong id="residencia">sou Brasileiro e resido em Santo Antonio do Sudoeste, no interior do
+            Paraná.</strong></p>
     <p>
-        Você pode acessar minhas redes por aqui: <br><a href="https://www.linkedin.com/in/antoniobrunowingert/" target="_blank">Linkedin</a> <br><a href="https://github.com/AntonioWingert" target="_blank">Github!</a>
+        Você pode acessar minhas redes por aqui: <br><a href="https://www.linkedin.com/in/antoniobrunowingert/"
+            target="_blank">Linkedin</a> <br><a href="https://github.com/AntonioWingert" target="_blank">Github!</a>
     </p>
     <ul id="qualidades"> <strong>Minhas Qualidades!</strong>
-        <li>Sou dedicado!</li>
-        <li>Sou uma pessoa estudiosa.</li>
-        <li>Me considero uma pessoa de facil comunicação.</li>
-        <li><strong>Sou bem nerd 👀</strong></li>
+        <li class="dedicado">Sou dedicado!</li>
+        <li class="estudioso">Sou uma pessoa estudiosa.</li>
+        <li class="comunicacao">Me considero uma pessoa de facil comunicação.</li>
+        <li class="nerd"><strong>Sou bem nerd 👀</strong></li>
     </ul>
     <p id="recomendacao">Não sou o tipo de pessoa que se atenta a blogs, mas se for pra redirecionar para algo que eu
         gosto muito de ver nos momentos de lazer, recomendo o melhor canal do Youtube! <strong><a
