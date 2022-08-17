@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+body {
+    background-color: #8ab0ab;
+    padding: 2%;
+}
+
+#name {
+    font-family: 'DynaPuff', cursive;
+    text-align: center;
+}
+
+#descricao {
+    font-family: "DynaPuff";
+    font-size: 15px;
+    position: absolute;
+    top: 36%;
+    right: 8%;    
+}
+
+#residencia {
+    text-decoration: underline;
+}
+
+.nerd {
+    font-size: 20px;
+    font-family: "DynaPuff";
+}
+
+.dedicado {
+    font-size: 17px;
+}
+
+.estudioso {
+    font-size: 18px;
+}
+
+.comunicacao {
+    font-size: 19px;
+}
+
+.minhafoto {
+    float: left;
+    padding: 10px;
+    width: 280px;
+    background-color: black;
+}
+
+.image-container {
+    height: 300px;
+    position: relative;
+}
