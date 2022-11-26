@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import SectionTitle from '../SectionTitle';
 import ProjetoItem from './ProjetoItemHome';
-import picture from '../../assets/timer-image.jpeg';
+import timerImage from '../../assets/timer-image.jpeg';
+import pizzaria from '../../assets/project-pizzaria.jpeg'
+import projectPokedex from '../../assets/project-pokedex.jpeg'
 import { Container } from './styles';
 
 function Projetos() {
@@ -10,20 +12,27 @@ function Projetos() {
       <SectionTitle title="Ultimos Projetos" />
       <section>
         <ProjetoItem
-          key="project-test"
-          img={picture}
+          key="timer"
+          img={timerImage}
           title="Timer"
           type="App"
           slug="project-timer"
         />
         <ProjetoItem
-          key="project-test"
-          img={picture}
-          title="Timer"
+          key="pokedex"
+          img={projectPokedex}
+          title="Pokédex"
           type="App"
-          slug="project-timer"
+          slug="project-pokedex"
         />
-      </section>
+        <ProjetoItem
+          key="pizzaria"
+          img={pizzaria}
+          title="Pizzaria Wingert"
+          type="Website"
+          slug="project-pizzaria"
+        />
+=      </section>
       <button type="button">
         <Link href="/projetos">
           <a>Ver todos os projetos</a>
