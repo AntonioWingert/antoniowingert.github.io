@@ -1,28 +1,30 @@
-import Link from 'next/link';
-import BannerProjeto from '../../../src/components/BannerProjeto';
+import Head from 'next/head';
 import Header from '../../../src/components/Header';
+import BannerProjeto from '../../../src/components/BannerProjeto';
 import { ProjetoContainer } from '../../../src/styles/ProjetoStyles';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { usePrismicDocumentByUID } from '@prismicio/react';
 
 
 export default function Projeto() {
+  const { query} = useRouter()
+  const slug = String(query.slug);
+  const [document] = usePrismicDocumentByUID('projects', slug)
+
   return (
     <ProjetoContainer>
       <Header />
-      <BannerProjeto
-        type="App"
-        imgUrl="https://www.adobe.com/content/dam/cc/us/en/creativecloud/file-types/image/raster/webp-file/thumbnail.jpeg"
-        title="Timer"
-      />
-
+       <BannerProjeto
+        title={document?.data.title}
+        type={document?.data.type}
+        imgUrl={document?.data.thumbnail.url}
+      /> 
       <main>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque rerum
-          ab exercitationem culpa soluta vero porro quidem quia earum, voluptas
-          sapiente. Quo ipsa repudiandae quibusdam eveniet natus rem eius
-          doloribus!
-        </p>
+        <p>{document?.data.description}</p>
         <button type="button">
-          <Link href="#">Ver projeto online</Link>
+          <Link target="_blank" href={`${document?.data.link.url}`}
+          >Ver projeto online</Link>
         </button>
       </main>
     </ProjetoContainer>
