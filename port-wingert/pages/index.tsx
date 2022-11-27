@@ -7,9 +7,8 @@ import HomeHero from "../src/components/HomeHero";
 import Projetos from "../src/components/Projetos";
 import { HomeContainer } from "../src/styles/HomeStyles";
 
-
 export default function Home() {
-  return (
+    return (
     <HomeContainer>
       <Header />
 
