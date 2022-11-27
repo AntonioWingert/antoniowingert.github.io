@@ -4,7 +4,12 @@ import theme from '../src/styles/theme';
 import { PrismicProvider } from '@prismicio/react'
 import { client } from '../src/services/prismic';
 
-function MyApp({ Component, pageProps }) {
+interface Props {
+  Component?: any,
+  pageProps?: any,
+}
+
+function MyApp({ Component, pageProps }: Props) {
   return (
     <PrismicProvider client={client}>
         <ThemeProvider theme={theme}>

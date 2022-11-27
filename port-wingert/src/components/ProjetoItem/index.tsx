@@ -5,7 +5,7 @@ interface ProjetoItemProps {
   title: string;
   type: string;
   imgUrl: string;
-  slug: string;
+  slug: string | null;
 }
 
 function ProjetoItem({ title, type, imgUrl, slug }: ProjetoItemProps) {

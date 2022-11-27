@@ -5,7 +5,7 @@ import { ProjetoContainer } from './styles';
 interface ProjetoProps {
   title: string;
   type: string;
-  slug: string;
+  slug: string | null;
   img: string;
 }
 
