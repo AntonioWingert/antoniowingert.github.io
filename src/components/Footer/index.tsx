@@ -6,10 +6,6 @@ import {
 import { Container } from './styles';
 
 function Footer() {
-  function handleRedirect(url: string) {
-    window.open(url);
-  }
-
   function handleScrollTop() {
     window.scroll({
       top: 0,
@@ -24,19 +20,15 @@ function Footer() {
           Voltar ao topo
         </button>
         <section>
-          <AiOutlineInstagram
-            onClick={() =>
-              handleRedirect('https://www.instagram.com/antoniobwingert/')
-            }
-          />
-          <AiOutlineGithub
-            onClick={() => handleRedirect('https://github.com/antonioWingert')}
-          />
-          <AiFillLinkedin
-            onClick={() =>
-              handleRedirect('https://www.linkedin.com/in/antoniobrunowingert/')
-            }
-          />
+          <a href="https://www.instagram.com/antoniobwingert/" target="_blank">
+            <AiOutlineInstagram/>
+          </a>
+          <a href="https://github.com/antonioWingert" target="_blank">
+            <AiOutlineGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/antoniobrunowingert/" target="_blank">
+            <AiFillLinkedin />
+          </a>
         </section>
       </div>
     </Container>
