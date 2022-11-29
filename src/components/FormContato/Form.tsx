@@ -12,7 +12,7 @@ export default function Form() {
 
   emailjs.init('Ia4HyCrKPe3CSMohW')
 
-  async function handleSubmit(event: FormEvent) {
+  async function handleSubmit(event: FormEvent| any) {
     event.preventDefault()
 
     if(loading) return;
