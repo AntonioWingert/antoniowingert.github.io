@@ -17,10 +17,10 @@ export default function Home() {
           name="description"
           content="Olá, me chamo Antonio, sou um desenvolvedor em desenvolvimento web, ainda estou cursando, porem pode acompanhar meus projetos por aqui, caso se sinta interessado, poderá entrar em contato comigo através das redes ou do formulário no site!"
         />
-        <meta property="og:image" content="/ogimage.jpeg" />
-        <meta property="og:image:secure_url" content="/ogimage.jpeg" />
-        <meta name="twitter:image" content="/ogimage.jpeg" />
-        <meta name="twitter:image:src" content="/ogimage.jpeg" />
+        <meta property="og:image" content="ogimage.jpeg" />
+        <meta property="og:image:secure_url" content="ogimage.jpeg" />
+        <meta name="twitter:image" content="ogimage.jpeg" />
+        <meta name="twitter:image:src" content="ogimage.jpeg" />
         <meta
           property="og:description"
           content="Olá, me chamo Antonio, sou um desenvolvedor em desenvolvimento web, ainda estou cursando, porem pode acompanhar meus projetos por aqui, caso se sinta interessado, poderá entrar em contato comigo através das redes ou do formulário no site!"

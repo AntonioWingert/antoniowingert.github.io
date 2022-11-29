@@ -15,10 +15,10 @@ export default function Projetos() {
             name="description"
             content="Essa pagina foi desenvolvida com o proposito de englobar meus projetos feitos até hoje, com o intuito de acompanhar minha evolução!"
           />
-          <meta property="og:image" content="/ogimage.jpeg" />
-          <meta property="og:image:secure_url" content="/ogimage.jpeg" />
-          <meta name="twitter:image" content="/ogimage.jpeg" />
-          <meta name="twitter:image:src" content="/ogimage.jpeg" />
+          <meta property="og:image" content="ogimage.jpeg" />
+          <meta property="og:image:secure_url" content="ogimage.jpeg" />
+          <meta name="twitter:image" content="ogimage.jpeg" />
+          <meta name="twitter:image:src" content="ogimage.jpeg" />
           <meta
             property="og:description"
             content="Essa pagina foi desenvolvida com o proposito de englobar meus projetos feitos até hoje, com o intuito de acompanhar minha evolução!"
