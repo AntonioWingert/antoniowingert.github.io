@@ -4,6 +4,7 @@ import theme from '../src/styles/theme';
 import { PrismicProvider } from '@prismicio/react'
 import { client } from '../src/services/prismic';
 import NextNprogress from 'nextjs-progressbar';
+import { Toaster } from 'react-hot-toast';
 
 interface Props {
   Component?: any,
@@ -21,8 +22,9 @@ function MyApp({ Component, pageProps }: Props) {
             height={3}
             showOnShallow
           />
+          <Toaster position="bottom-right" />
           <Component {...pageProps} />
-            <GlobalStyles />
+          <GlobalStyles />
         </ThemeProvider>
     </PrismicProvider>
   );
