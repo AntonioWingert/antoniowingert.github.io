@@ -81,7 +81,7 @@ export default function Form() {
         placeholder="Mensagem" 
         />
       <button 
-      disabled={loading}
+      disabled={true}
       type="submit">ENVIAR</button>
     </FormContainer>
   );

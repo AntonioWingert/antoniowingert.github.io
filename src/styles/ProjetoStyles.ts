@@ -20,25 +20,25 @@ export const ProjetoContainer = styled.div`
       text-align: justify;
     }
 
-    button {
-      background: ${({ theme }) => theme.primary};
-      padding: 0.8rem 3rem;
-      border-radius: 0.5rem;
-      border: none;
-      transition: 0.5s;
-      margin-top: 2rem;
-
-      &:hover {
-        background: ${({ theme }) => darken(0.05, theme.primary)};
-      }
-
-      a {
+    a {
+      
+        button {
+        background: ${({ theme }) => theme.primary};
+        padding: 0.8rem 3rem;
+        border-radius: 0.5rem;
+        border: none;
+        transition: 0.5s;
+        margin-top: 2rem;
         color: #fff;
         text-transform: uppercase;
         font-size: 1.5rem;
         font-weight: 300;
-      }
+
+        &:hover {
+          background: ${({ theme }) => darken(0.05, theme.primary)};
+        }
     }
+  }
 
     @media (max-width: 700px) {
       padding: 0 2.5rem;
