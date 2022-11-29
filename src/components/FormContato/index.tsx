@@ -8,16 +8,16 @@ export function FormContato() {
       <SectionTitle
         title={
           <>
-            Precisa dos
+            Quer entrar em
             <br />
-            meus serviços?
+            contato comigo?
           </>
         }
         description={
           <>
             Preencha o formulário abaixo que
             <br />
-            irei retornar em breve
+            irei retornar em breve!
           </>
         }
       />
