@@ -14,6 +14,21 @@ export default function Projeto() {
 
   return (
     <ProjetoContainer>
+      <Head>
+      <title>{document?.data.title} | Meu portfólio</title>
+        <meta
+          name="description"
+          content={document?.data.description}
+        />
+        <meta property="og:image" content={document?.data.thumbnail.url} />
+        <meta property="og:image:secure_url" content={document?.data.thumbnail.url} />
+        <meta name="twitter:image" content={document?.data.thumbnail.url} />
+        <meta name="twitter:image:src" content={document?.data.thumbnail.url} />
+        <meta
+          property="og:description"
+          content={document?.data.description}
+        />
+      </Head>
       <Header />
        <BannerProjeto
         title={document?.data.title}
