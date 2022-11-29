@@ -13,7 +13,7 @@ export default function Projeto() {
   const [document] = usePrismicDocumentByUID('projects', slug)
 
   return (
-    <ProjetoContainer>
+    <ProjetoContainer data-aos="fade-up">
       <Head>
       <title>{document?.data.title} | Meu portfólio</title>
         <meta

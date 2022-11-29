@@ -25,7 +25,7 @@ export default function Projetos() {
           />
       </Head>
       <Header />
-      <main className="container">
+      <main className="container" data-aos="fade-up">
        {
        projetos?.map(projeto => (
         <ProjetoItem
