@@ -2,8 +2,14 @@
 import { Container, TextContainer, InfosContainer, CodeItem } from './styles';
 import picture from '../../assets/perfil.png';
 import Image from 'next/image';
+import Aos from 'aos';
+import { useEffect } from 'react';
+import 'aos/dist/aos.css'
 
 function HomeHero() {
+  useEffect(()=> {
+    Aos.init({ duration: 1500});
+  }, [])
   return (
     <Container data-aos="fade-up">
       <Image className='img' src={picture} alt="Minha foto" />

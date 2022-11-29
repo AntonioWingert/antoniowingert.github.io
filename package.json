@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@prismicio/types": "^0.2.4",
+    "@types/aos": "^3.0.4",
     "@types/styled-components": "^5.1.26",
     "next": "^13.0.5",
     "slice-machine-ui": "^0.5.2"
