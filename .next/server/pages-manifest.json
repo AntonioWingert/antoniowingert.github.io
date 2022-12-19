@@ -2,5 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/projetos/[slug]": "pages/projetos/[slug].js"
+  "/": "pages/index.html",
+  "/projetos/[slug]": "pages/projetos/[slug].html",
+  "/projetos": "pages/projetos.html",
+  "/404": "pages/404.html"
 }
