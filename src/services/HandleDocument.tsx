@@ -15,7 +15,8 @@ const HandleDocument = () => {
     description: projeto.data.description,
     type: projeto.data.type,
     link: projeto.data.link.url,
-    thumbnail: projeto.data.thumbnail.url
+    thumbnail: projeto.data.thumbnail.url,
+    github: projeto.data.github.url,
   }))
 
   return projetos;

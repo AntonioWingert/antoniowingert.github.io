@@ -34,7 +34,7 @@
     "typescript": "4.9.3"
   },
   "devDependencies": {
-    "@prismicio/types": "^0.2.4",
+    "@prismicio/types": "^0.2.5",
     "@types/aos": "^3.0.4",
     "@types/styled-components": "^5.1.26",
     "next": "^13.0.5",

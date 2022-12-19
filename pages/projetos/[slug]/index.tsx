@@ -37,10 +37,12 @@ export default function Projeto() {
       /> 
       <main>
         <p>{document?.data.description}</p>
-        <Link className='button' target="_blank" href={`${document?.data.link.url}`}>
+        <Link target="_blank" href={`${document?.data.link.url}`}>
           <button type="button">Ver projeto online </button>
         </Link>
-        
+        <Link target="_blank" href={`${document?.data.github.url}`}>
+          <button type="button">Acessar Repositorio</button>
+        </Link>        
       </main>
     </ProjetoContainer>
   );

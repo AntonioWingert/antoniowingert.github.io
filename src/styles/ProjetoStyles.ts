@@ -13,6 +13,7 @@ export const ProjetoContainer = styled.div`
     width: 100%;
     padding: 0 5rem;
 
+
     p {
       color: ${({ theme }) => theme.textLight};
       font-size: 1.5rem;
@@ -21,6 +22,7 @@ export const ProjetoContainer = styled.div`
     }
 
     a {
+      margin-right: 2rem;
       
         button {
         background: ${({ theme }) => theme.primary};
@@ -33,7 +35,8 @@ export const ProjetoContainer = styled.div`
         text-transform: uppercase;
         font-size: 1.5rem;
         font-weight: 300;
-
+        width: 24.375rem;
+        
         &:hover {
           background: ${({ theme }) => darken(0.05, theme.primary)};
         }
@@ -43,11 +46,13 @@ export const ProjetoContainer = styled.div`
     @media (max-width: 700px) {
       padding: 0 2.5rem;
 
+
       p {
         font-size: 1rem;
       }
 
       button {
+        max-width: 100%;
         padding: 0.7rem 2rem;
 
         a {
