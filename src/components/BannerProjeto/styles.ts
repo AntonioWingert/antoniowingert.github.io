@@ -6,9 +6,10 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   width: 100%;
+  height: 50rem;
+  margin: 0 auto;
   background: url(${props => props.imgUrl}) no-repeat center;
   background-size: cover;
-  height: 26rem;
   position: relative;
   padding: 3rem 5rem;
   display: flex;

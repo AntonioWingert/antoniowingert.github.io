@@ -1,4 +1,4 @@
-import { FormEvent, use, useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { FormContainer, Input, TextArea } from './styles';
 import emailjs from "emailjs-com";
 import toast from 'react-hot-toast';
@@ -31,7 +31,7 @@ export default function Form() {
 
     emailjs.sendForm('gmailMessage', 'template_nzbnu8k', event.target, 'Ia4HyCrKPe3CSMohW')
 
-    .then((result) => {
+    .then(() => {
         setLoading(true)
         toast('Mensagem enviada com sucesso!', {
           style: {

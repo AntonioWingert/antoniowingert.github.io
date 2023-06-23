@@ -20,13 +20,13 @@ function Footer() {
           Voltar ao topo
         </button>
         <section>
-          <a href="https://www.instagram.com/antoniobwingert/" target="_blank">
+          <a href="https://www.instagram.com/antoniobwingert/" target="_blank" rel='noreferrer'>
             <AiOutlineInstagram/>
           </a>
-          <a href="https://github.com/antonioWingert" target="_blank">
+          <a href="https://github.com/antonioWingert" target="_blank" rel='noreferrer'>
             <AiOutlineGithub />
           </a>
-          <a href="https://www.linkedin.com/in/antoniobrunowingert/" target="_blank">
+          <a href="https://www.linkedin.com/in/antoniobrunowingert/" target="_blank" rel='noreferrer'>
             <AiFillLinkedin />
           </a>
         </section>

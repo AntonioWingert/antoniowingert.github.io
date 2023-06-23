@@ -1,0 +1,4 @@
+**/node_modules/*
+**/out/*
+**/.next/*
+**/styles/styled.d.ts
